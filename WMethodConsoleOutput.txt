@@ -60,7 +60,7 @@ From 	 Input/Output 	 To
 3	 7/no		 2
 4	 3/no		 2
 4	 4/no		 2
-4	 0/no		 2
+4	 0/no		 4
 4	 1/no		 2
 4	 (/no		 2
 4	 7/no		 5
@@ -722,8 +722,8 @@ Current state: 2
 Current state: 3
  Input: 0 Next state: 4 Output: no
 Current state: 4
- Input: 0 Next state: 2 Output: no
-Current state: 2
+ Input: 0 Next state: 4 Output: no
+Current state: 4
  Input: ( Next state: 2 Output: no
 
 FSM execution completed. Final state: 2
@@ -739,8 +739,8 @@ Current state: 2
 Current state: 3
  Input: 0 Next state: 4 Output: no
 Current state: 4
- Input: 0 Next state: 2 Output: no
-Current state: 2
+ Input: 0 Next state: 4 Output: no
+Current state: 4
  Input: ) Next state: 2 Output: no
 
 FSM execution completed. Final state: 2
@@ -756,10 +756,10 @@ Current state: 2
 Current state: 3
  Input: 0 Next state: 4 Output: no
 Current state: 4
- Input: 0 Next state: 2 Output: no
-Current state: 2
- Input: 0 Next state: 3 Output: no
-Current state: 3
+ Input: 0 Next state: 4 Output: no
+Current state: 4
+ Input: 0 Next state: 4 Output: no
+Current state: 4
  Input: 0 Next state: 4 Output: no
 Current state: 4
  Input: 7 Next state: 5 Output: no
@@ -779,16 +779,16 @@ Current state: 2
 Current state: 3
  Input: 0 Next state: 4 Output: no
 Current state: 4
- Input: 0 Next state: 2 Output: no
-Current state: 2
- Input: 0 Next state: 3 Output: no
-Current state: 3
- Input: 7 Next state: 2 Output: no
-Current state: 2
- Input: ) Next state: 2 Output: no
+ Input: 0 Next state: 4 Output: no
+Current state: 4
+ Input: 0 Next state: 4 Output: no
+Current state: 4
+ Input: 7 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
 
-FSM execution completed. Final state: 2
-Output pattern:nonononononono
+FSM execution completed. Final state: 6
+Output pattern:nonononononoyes
 
 Test Case 42
 ( 0 0 0 7 ) 
@@ -800,14 +800,14 @@ Current state: 2
 Current state: 3
  Input: 0 Next state: 4 Output: no
 Current state: 4
- Input: 0 Next state: 2 Output: no
-Current state: 2
- Input: 7 Next state: 2 Output: no
-Current state: 2
- Input: ) Next state: 2 Output: no
+ Input: 0 Next state: 4 Output: no
+Current state: 4
+ Input: 7 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
 
-FSM execution completed. Final state: 2
-Output pattern:nononononono
+FSM execution completed. Final state: 6
+Output pattern:nononononoyes
 
 Test Case 43
 ( 0 0 1 ( 
@@ -6678,7 +6678,7 @@ public void testCase40() throws Exception{
 public void testCase41() throws Exception{
 	JamesBond fixture = new JamesBond();
 	Boolean result = fixture.bondRegex("(00007)");
-	assertFalse(result);
+	assertTrue(result);
 }
 
 //Generated JUnit test for test case 42: ( 0 0 0 7 )
@@ -6686,7 +6686,7 @@ public void testCase41() throws Exception{
 public void testCase42() throws Exception{
 	JamesBond fixture = new JamesBond();
 	Boolean result = fixture.bondRegex("(0007)");
-	assertFalse(result);
+	assertTrue(result);
 }
 
 //Generated JUnit test for test case 43: ( 0 0 1 (
