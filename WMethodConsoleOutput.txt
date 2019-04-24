@@ -6355,1710 +6355,1710 @@ Output pattern:nonono
 
 //Generated JUnit test for test case 1: (
 public void testCase1(){
-	assertFalse(bondRegex("no"));
+	assertFalse(bondRegex("("));
 }
 
 //Generated JUnit test for test case 2: ( (
 public void testCase2(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("(("));
 }
 
 //Generated JUnit test for test case 3: ( ( (
 public void testCase3(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("((("));
 }
 
 //Generated JUnit test for test case 4: ( ( )
 public void testCase4(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(()"));
 }
 
 //Generated JUnit test for test case 5: ( ( 0 0 7 )
 public void testCase5(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("((007)"));
 }
 
 //Generated JUnit test for test case 6: ( ( 0 7 )
 public void testCase6(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("((07)"));
 }
 
 //Generated JUnit test for test case 7: ( ( 7 )
 public void testCase7(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("((7)"));
 }
 
 //Generated JUnit test for test case 8: ( )
 public void testCase8(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("()"));
 }
 
 //Generated JUnit test for test case 9: ( ) (
 public void testCase9(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("()("));
 }
 
 //Generated JUnit test for test case 10: ( ) )
 public void testCase10(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("())"));
 }
 
 //Generated JUnit test for test case 11: ( ) 0 0 7 )
 public void testCase11(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("()007)"));
 }
 
 //Generated JUnit test for test case 12: ( ) 0 7 )
 public void testCase12(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("()07)"));
 }
 
 //Generated JUnit test for test case 13: ( ) 7 )
 public void testCase13(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("()7)"));
 }
 
 //Generated JUnit test for test case 14: ( 0 (
 public void testCase14(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(0("));
 }
 
 //Generated JUnit test for test case 15: ( 0 ( (
 public void testCase15(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(0(("));
 }
 
 //Generated JUnit test for test case 16: ( 0 ( )
 public void testCase16(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(0()"));
 }
 
 //Generated JUnit test for test case 17: ( 0 ( 0 0 7 )
 public void testCase17(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(0(007)"));
 }
 
 //Generated JUnit test for test case 18: ( 0 ( 0 7 )
 public void testCase18(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0(07)"));
 }
 
 //Generated JUnit test for test case 19: ( 0 ( 7 )
 public void testCase19(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(0(7)"));
 }
 
 //Generated JUnit test for test case 20: ( 0 )
 public void testCase20(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(0)"));
 }
 
 //Generated JUnit test for test case 21: ( 0 ) (
 public void testCase21(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(0)("));
 }
 
 //Generated JUnit test for test case 22: ( 0 ) )
 public void testCase22(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(0))"));
 }
 
 //Generated JUnit test for test case 23: ( 0 ) 0 0 7 )
 public void testCase23(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(0)007)"));
 }
 
 //Generated JUnit test for test case 24: ( 0 ) 0 7 )
 public void testCase24(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0)07)"));
 }
 
 //Generated JUnit test for test case 25: ( 0 ) 7 )
 public void testCase25(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(0)7)"));
 }
 
 //Generated JUnit test for test case 26: ( 0 0 (
 public void testCase26(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(00("));
 }
 
 //Generated JUnit test for test case 27: ( 0 0 ( (
 public void testCase27(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(00(("));
 }
 
 //Generated JUnit test for test case 28: ( 0 0 ( )
 public void testCase28(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(00()"));
 }
 
 //Generated JUnit test for test case 29: ( 0 0 ( 0 0 7 )
 public void testCase29(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(00(007)"));
 }
 
 //Generated JUnit test for test case 30: ( 0 0 ( 0 7 )
 public void testCase30(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00(07)"));
 }
 
 //Generated JUnit test for test case 31: ( 0 0 ( 7 )
 public void testCase31(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(00(7)"));
 }
 
 //Generated JUnit test for test case 32: ( 0 0 )
 public void testCase32(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(00)"));
 }
 
 //Generated JUnit test for test case 33: ( 0 0 ) (
 public void testCase33(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(00)("));
 }
 
 //Generated JUnit test for test case 34: ( 0 0 ) )
 public void testCase34(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(00))"));
 }
 
 //Generated JUnit test for test case 35: ( 0 0 ) 0 0 7 )
 public void testCase35(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(00)007)"));
 }
 
 //Generated JUnit test for test case 36: ( 0 0 ) 0 7 )
 public void testCase36(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00)07)"));
 }
 
 //Generated JUnit test for test case 37: ( 0 0 ) 7 )
 public void testCase37(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(00)7)"));
 }
 
 //Generated JUnit test for test case 38: ( 0 0 0 (
 public void testCase38(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(000("));
 }
 
 //Generated JUnit test for test case 39: ( 0 0 0 )
 public void testCase39(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(000)"));
 }
 
 //Generated JUnit test for test case 40: ( 0 0 0 0 0 7 )
 public void testCase40(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(000007)"));
 }
 
 //Generated JUnit test for test case 41: ( 0 0 0 0 7 )
 public void testCase41(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00007)"));
 }
 
 //Generated JUnit test for test case 42: ( 0 0 0 7 )
 public void testCase42(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0007)"));
 }
 
 //Generated JUnit test for test case 43: ( 0 0 1 (
 public void testCase43(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(001("));
 }
 
 //Generated JUnit test for test case 44: ( 0 0 1 )
 public void testCase44(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(001)"));
 }
 
 //Generated JUnit test for test case 45: ( 0 0 1 0 0 7 )
 public void testCase45(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(001007)"));
 }
 
 //Generated JUnit test for test case 46: ( 0 0 1 0 7 )
 public void testCase46(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00107)"));
 }
 
 //Generated JUnit test for test case 47: ( 0 0 1 7 )
 public void testCase47(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0017)"));
 }
 
 //Generated JUnit test for test case 48: ( 0 0 2 (
 public void testCase48(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(002("));
 }
 
 //Generated JUnit test for test case 49: ( 0 0 2 )
 public void testCase49(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(002)"));
 }
 
 //Generated JUnit test for test case 50: ( 0 0 2 0 0 7 )
 public void testCase50(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(002007)"));
 }
 
 //Generated JUnit test for test case 51: ( 0 0 2 0 7 )
 public void testCase51(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00207)"));
 }
 
 //Generated JUnit test for test case 52: ( 0 0 2 7 )
 public void testCase52(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0027)"));
 }
 
 //Generated JUnit test for test case 53: ( 0 0 3 (
 public void testCase53(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(003("));
 }
 
 //Generated JUnit test for test case 54: ( 0 0 3 )
 public void testCase54(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(003)"));
 }
 
 //Generated JUnit test for test case 55: ( 0 0 3 0 0 7 )
 public void testCase55(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(003007)"));
 }
 
 //Generated JUnit test for test case 56: ( 0 0 3 0 7 )
 public void testCase56(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00307)"));
 }
 
 //Generated JUnit test for test case 57: ( 0 0 3 7 )
 public void testCase57(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0037)"));
 }
 
 //Generated JUnit test for test case 58: ( 0 0 4 (
 public void testCase58(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(004("));
 }
 
 //Generated JUnit test for test case 59: ( 0 0 4 )
 public void testCase59(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(004)"));
 }
 
 //Generated JUnit test for test case 60: ( 0 0 4 0 0 7 )
 public void testCase60(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(004007)"));
 }
 
 //Generated JUnit test for test case 61: ( 0 0 4 0 7 )
 public void testCase61(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00407)"));
 }
 
 //Generated JUnit test for test case 62: ( 0 0 4 7 )
 public void testCase62(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0047)"));
 }
 
 //Generated JUnit test for test case 63: ( 0 0 5 (
 public void testCase63(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(005("));
 }
 
 //Generated JUnit test for test case 64: ( 0 0 5 )
 public void testCase64(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(005)"));
 }
 
 //Generated JUnit test for test case 65: ( 0 0 5 0 0 7 )
 public void testCase65(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(005007)"));
 }
 
 //Generated JUnit test for test case 66: ( 0 0 5 0 7 )
 public void testCase66(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00507)"));
 }
 
 //Generated JUnit test for test case 67: ( 0 0 5 7 )
 public void testCase67(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0057)"));
 }
 
 //Generated JUnit test for test case 68: ( 0 0 6 (
 public void testCase68(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(006("));
 }
 
 //Generated JUnit test for test case 69: ( 0 0 6 )
 public void testCase69(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(006)"));
 }
 
 //Generated JUnit test for test case 70: ( 0 0 6 0 0 7 )
 public void testCase70(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(006007)"));
 }
 
 //Generated JUnit test for test case 71: ( 0 0 6 0 7 )
 public void testCase71(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00607)"));
 }
 
 //Generated JUnit test for test case 72: ( 0 0 6 7 )
 public void testCase72(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0067)"));
 }
 
 //Generated JUnit test for test case 73: ( 0 0 7 (
 public void testCase73(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(007("));
 }
 
 //Generated JUnit test for test case 74: ( 0 0 7 ( (
 public void testCase74(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(007(("));
 }
 
 //Generated JUnit test for test case 75: ( 0 0 7 ( )
 public void testCase75(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(007()"));
 }
 
 //Generated JUnit test for test case 76: ( 0 0 7 ( 0 0 7 )
 public void testCase76(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(007(007)"));
 }
 
 //Generated JUnit test for test case 77: ( 0 0 7 ( 0 7 )
 public void testCase77(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007(07)"));
 }
 
 //Generated JUnit test for test case 78: ( 0 0 7 ( 7 )
 public void testCase78(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(007(7)"));
 }
 
 //Generated JUnit test for test case 79: ( 0 0 7 )
 public void testCase79(){
-	assertTrue(bondRegex("nonononoyes"));
+	assertTrue(bondRegex("(007)"));
 }
 
 //Generated JUnit test for test case 80: ( 0 0 7 ) (
 public void testCase80(){
-	assertTrue(bondRegex("nonononoyesyes"));
+	assertTrue(bondRegex("(007)("));
 }
 
 //Generated JUnit test for test case 81: ( 0 0 7 ) ( (
 public void testCase81(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)(("));
 }
 
 //Generated JUnit test for test case 82: ( 0 0 7 ) ( )
 public void testCase82(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)()"));
 }
 
 //Generated JUnit test for test case 83: ( 0 0 7 ) ( 0 0 7 )
 public void testCase83(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)(007)"));
 }
 
 //Generated JUnit test for test case 84: ( 0 0 7 ) ( 0 7 )
 public void testCase84(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)(07)"));
 }
 
 //Generated JUnit test for test case 85: ( 0 0 7 ) ( 7 )
 public void testCase85(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)(7)"));
 }
 
 //Generated JUnit test for test case 86: ( 0 0 7 ) )
 public void testCase86(){
-	assertTrue(bondRegex("nonononoyesyes"));
+	assertTrue(bondRegex("(007))"));
 }
 
 //Generated JUnit test for test case 87: ( 0 0 7 ) ) (
 public void testCase87(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007))("));
 }
 
 //Generated JUnit test for test case 88: ( 0 0 7 ) ) )
 public void testCase88(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)))"));
 }
 
 //Generated JUnit test for test case 89: ( 0 0 7 ) ) 0 0 7 )
 public void testCase89(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007))007)"));
 }
 
 //Generated JUnit test for test case 90: ( 0 0 7 ) ) 0 7 )
 public void testCase90(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007))07)"));
 }
 
 //Generated JUnit test for test case 91: ( 0 0 7 ) ) 7 )
 public void testCase91(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007))7)"));
 }
 
 //Generated JUnit test for test case 92: ( 0 0 7 ) 0 (
 public void testCase92(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)0("));
 }
 
 //Generated JUnit test for test case 93: ( 0 0 7 ) 0 )
 public void testCase93(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)0)"));
 }
 
 //Generated JUnit test for test case 94: ( 0 0 7 ) 0 0 0 7 )
 public void testCase94(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)0007)"));
 }
 
 //Generated JUnit test for test case 95: ( 0 0 7 ) 0 0 7 )
 public void testCase95(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)007)"));
 }
 
 //Generated JUnit test for test case 96: ( 0 0 7 ) 0 7 )
 public void testCase96(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)07)"));
 }
 
 //Generated JUnit test for test case 97: ( 0 0 7 ) 1 (
 public void testCase97(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)1("));
 }
 
 //Generated JUnit test for test case 98: ( 0 0 7 ) 1 )
 public void testCase98(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)1)"));
 }
 
 //Generated JUnit test for test case 99: ( 0 0 7 ) 1 0 0 7 )
 public void testCase99(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)1007)"));
 }
 
 //Generated JUnit test for test case 100: ( 0 0 7 ) 1 0 7 )
 public void testCase100(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)107)"));
 }
 
 //Generated JUnit test for test case 101: ( 0 0 7 ) 1 7 )
 public void testCase101(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)17)"));
 }
 
 //Generated JUnit test for test case 102: ( 0 0 7 ) 2 (
 public void testCase102(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)2("));
 }
 
 //Generated JUnit test for test case 103: ( 0 0 7 ) 2 )
 public void testCase103(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)2)"));
 }
 
 //Generated JUnit test for test case 104: ( 0 0 7 ) 2 0 0 7 )
 public void testCase104(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)2007)"));
 }
 
 //Generated JUnit test for test case 105: ( 0 0 7 ) 2 0 7 )
 public void testCase105(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)207)"));
 }
 
 //Generated JUnit test for test case 106: ( 0 0 7 ) 2 7 )
 public void testCase106(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)27)"));
 }
 
 //Generated JUnit test for test case 107: ( 0 0 7 ) 3 (
 public void testCase107(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)3("));
 }
 
 //Generated JUnit test for test case 108: ( 0 0 7 ) 3 )
 public void testCase108(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)3)"));
 }
 
 //Generated JUnit test for test case 109: ( 0 0 7 ) 3 0 0 7 )
 public void testCase109(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)3007)"));
 }
 
 //Generated JUnit test for test case 110: ( 0 0 7 ) 3 0 7 )
 public void testCase110(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)307)"));
 }
 
 //Generated JUnit test for test case 111: ( 0 0 7 ) 3 7 )
 public void testCase111(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)37)"));
 }
 
 //Generated JUnit test for test case 112: ( 0 0 7 ) 4 (
 public void testCase112(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)4("));
 }
 
 //Generated JUnit test for test case 113: ( 0 0 7 ) 4 )
 public void testCase113(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)4)"));
 }
 
 //Generated JUnit test for test case 114: ( 0 0 7 ) 4 0 0 7 )
 public void testCase114(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)4007)"));
 }
 
 //Generated JUnit test for test case 115: ( 0 0 7 ) 4 0 7 )
 public void testCase115(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)407)"));
 }
 
 //Generated JUnit test for test case 116: ( 0 0 7 ) 4 7 )
 public void testCase116(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)47)"));
 }
 
 //Generated JUnit test for test case 117: ( 0 0 7 ) 5 (
 public void testCase117(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)5("));
 }
 
 //Generated JUnit test for test case 118: ( 0 0 7 ) 5 )
 public void testCase118(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)5)"));
 }
 
 //Generated JUnit test for test case 119: ( 0 0 7 ) 5 0 0 7 )
 public void testCase119(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)5007)"));
 }
 
 //Generated JUnit test for test case 120: ( 0 0 7 ) 5 0 7 )
 public void testCase120(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)507)"));
 }
 
 //Generated JUnit test for test case 121: ( 0 0 7 ) 5 7 )
 public void testCase121(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)57)"));
 }
 
 //Generated JUnit test for test case 122: ( 0 0 7 ) 6 (
 public void testCase122(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)6("));
 }
 
 //Generated JUnit test for test case 123: ( 0 0 7 ) 6 )
 public void testCase123(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)6)"));
 }
 
 //Generated JUnit test for test case 124: ( 0 0 7 ) 6 0 0 7 )
 public void testCase124(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)6007)"));
 }
 
 //Generated JUnit test for test case 125: ( 0 0 7 ) 6 0 7 )
 public void testCase125(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)607)"));
 }
 
 //Generated JUnit test for test case 126: ( 0 0 7 ) 6 7 )
 public void testCase126(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)67)"));
 }
 
 //Generated JUnit test for test case 127: ( 0 0 7 ) 7 (
 public void testCase127(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)7("));
 }
 
 //Generated JUnit test for test case 128: ( 0 0 7 ) 7 )
 public void testCase128(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)7)"));
 }
 
 //Generated JUnit test for test case 129: ( 0 0 7 ) 7 0 0 7 )
 public void testCase129(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)7007)"));
 }
 
 //Generated JUnit test for test case 130: ( 0 0 7 ) 7 0 7 )
 public void testCase130(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)707)"));
 }
 
 //Generated JUnit test for test case 131: ( 0 0 7 ) 7 7 )
 public void testCase131(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)77)"));
 }
 
 //Generated JUnit test for test case 132: ( 0 0 7 ) 8 (
 public void testCase132(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)8("));
 }
 
 //Generated JUnit test for test case 133: ( 0 0 7 ) 8 )
 public void testCase133(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)8)"));
 }
 
 //Generated JUnit test for test case 134: ( 0 0 7 ) 8 0 0 7 )
 public void testCase134(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)8007)"));
 }
 
 //Generated JUnit test for test case 135: ( 0 0 7 ) 8 0 7 )
 public void testCase135(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)807)"));
 }
 
 //Generated JUnit test for test case 136: ( 0 0 7 ) 8 7 )
 public void testCase136(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)87)"));
 }
 
 //Generated JUnit test for test case 137: ( 0 0 7 ) 9 (
 public void testCase137(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)9("));
 }
 
 //Generated JUnit test for test case 138: ( 0 0 7 ) 9 )
 public void testCase138(){
-	assertTrue(bondRegex("nonononoyesyesyes"));
+	assertTrue(bondRegex("(007)9)"));
 }
 
 //Generated JUnit test for test case 139: ( 0 0 7 ) 9 0 0 7 )
 public void testCase139(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)9007)"));
 }
 
 //Generated JUnit test for test case 140: ( 0 0 7 ) 9 0 7 )
 public void testCase140(){
-	assertTrue(bondRegex("nonononoyesyesyesyesyes"));
+	assertTrue(bondRegex("(007)907)"));
 }
 
 //Generated JUnit test for test case 141: ( 0 0 7 ) 9 7 )
 public void testCase141(){
-	assertTrue(bondRegex("nonononoyesyesyesyes"));
+	assertTrue(bondRegex("(007)97)"));
 }
 
 //Generated JUnit test for test case 142: ( 0 0 7 0 (
 public void testCase142(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0070("));
 }
 
 //Generated JUnit test for test case 143: ( 0 0 7 0 )
 public void testCase143(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0070)"));
 }
 
 //Generated JUnit test for test case 144: ( 0 0 7 0 0 0 7 )
 public void testCase144(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0070007)"));
 }
 
 //Generated JUnit test for test case 145: ( 0 0 7 0 0 7 )
 public void testCase145(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007007)"));
 }
 
 //Generated JUnit test for test case 146: ( 0 0 7 0 7 )
 public void testCase146(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00707)"));
 }
 
 //Generated JUnit test for test case 147: ( 0 0 7 1 (
 public void testCase147(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0071("));
 }
 
 //Generated JUnit test for test case 148: ( 0 0 7 1 )
 public void testCase148(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0071)"));
 }
 
 //Generated JUnit test for test case 149: ( 0 0 7 1 0 0 7 )
 public void testCase149(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0071007)"));
 }
 
 //Generated JUnit test for test case 150: ( 0 0 7 1 0 7 )
 public void testCase150(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007107)"));
 }
 
 //Generated JUnit test for test case 151: ( 0 0 7 1 7 )
 public void testCase151(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00717)"));
 }
 
 //Generated JUnit test for test case 152: ( 0 0 7 2 (
 public void testCase152(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0072("));
 }
 
 //Generated JUnit test for test case 153: ( 0 0 7 2 )
 public void testCase153(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0072)"));
 }
 
 //Generated JUnit test for test case 154: ( 0 0 7 2 0 0 7 )
 public void testCase154(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0072007)"));
 }
 
 //Generated JUnit test for test case 155: ( 0 0 7 2 0 7 )
 public void testCase155(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007207)"));
 }
 
 //Generated JUnit test for test case 156: ( 0 0 7 2 7 )
 public void testCase156(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00727)"));
 }
 
 //Generated JUnit test for test case 157: ( 0 0 7 3 (
 public void testCase157(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0073("));
 }
 
 //Generated JUnit test for test case 158: ( 0 0 7 3 )
 public void testCase158(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0073)"));
 }
 
 //Generated JUnit test for test case 159: ( 0 0 7 3 0 0 7 )
 public void testCase159(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0073007)"));
 }
 
 //Generated JUnit test for test case 160: ( 0 0 7 3 0 7 )
 public void testCase160(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007307)"));
 }
 
 //Generated JUnit test for test case 161: ( 0 0 7 3 7 )
 public void testCase161(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00737)"));
 }
 
 //Generated JUnit test for test case 162: ( 0 0 7 5 (
 public void testCase162(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0075("));
 }
 
 //Generated JUnit test for test case 163: ( 0 0 7 5 )
 public void testCase163(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0075)"));
 }
 
 //Generated JUnit test for test case 164: ( 0 0 7 5 0 0 7 )
 public void testCase164(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0075007)"));
 }
 
 //Generated JUnit test for test case 165: ( 0 0 7 5 0 7 )
 public void testCase165(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007507)"));
 }
 
 //Generated JUnit test for test case 166: ( 0 0 7 5 7 )
 public void testCase166(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00757)"));
 }
 
 //Generated JUnit test for test case 167: ( 0 0 7 6 (
 public void testCase167(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0076("));
 }
 
 //Generated JUnit test for test case 168: ( 0 0 7 6 )
 public void testCase168(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0076)"));
 }
 
 //Generated JUnit test for test case 169: ( 0 0 7 6 0 0 7 )
 public void testCase169(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0076007)"));
 }
 
 //Generated JUnit test for test case 170: ( 0 0 7 6 0 7 )
 public void testCase170(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007607)"));
 }
 
 //Generated JUnit test for test case 171: ( 0 0 7 6 7 )
 public void testCase171(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00767)"));
 }
 
 //Generated JUnit test for test case 172: ( 0 0 7 7 (
 public void testCase172(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0077("));
 }
 
 //Generated JUnit test for test case 173: ( 0 0 7 7 )
 public void testCase173(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0077)"));
 }
 
 //Generated JUnit test for test case 174: ( 0 0 7 7 0 0 7 )
 public void testCase174(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0077007)"));
 }
 
 //Generated JUnit test for test case 175: ( 0 0 7 7 0 7 )
 public void testCase175(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007707)"));
 }
 
 //Generated JUnit test for test case 176: ( 0 0 7 7 7 )
 public void testCase176(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00777)"));
 }
 
 //Generated JUnit test for test case 177: ( 0 0 7 8 (
 public void testCase177(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0078("));
 }
 
 //Generated JUnit test for test case 178: ( 0 0 7 8 )
 public void testCase178(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0078)"));
 }
 
 //Generated JUnit test for test case 179: ( 0 0 7 8 0 0 7 )
 public void testCase179(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0078007)"));
 }
 
 //Generated JUnit test for test case 180: ( 0 0 7 8 0 7 )
 public void testCase180(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007807)"));
 }
 
 //Generated JUnit test for test case 181: ( 0 0 7 8 7 )
 public void testCase181(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00787)"));
 }
 
 //Generated JUnit test for test case 182: ( 0 0 7 9 (
 public void testCase182(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0079("));
 }
 
 //Generated JUnit test for test case 183: ( 0 0 7 9 )
 public void testCase183(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(0079)"));
 }
 
 //Generated JUnit test for test case 184: ( 0 0 7 9 0 0 7 )
 public void testCase184(){
-	assertTrue(bondRegex("nonononononononoyes"));
+	assertTrue(bondRegex("(0079007)"));
 }
 
 //Generated JUnit test for test case 185: ( 0 0 7 9 0 7 )
 public void testCase185(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(007907)"));
 }
 
 //Generated JUnit test for test case 186: ( 0 0 7 9 7 )
 public void testCase186(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(00797)"));
 }
 
 //Generated JUnit test for test case 187: ( 0 0 8 (
 public void testCase187(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(008("));
 }
 
 //Generated JUnit test for test case 188: ( 0 0 8 )
 public void testCase188(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(008)"));
 }
 
 //Generated JUnit test for test case 189: ( 0 0 8 0 0 7 )
 public void testCase189(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(008007)"));
 }
 
 //Generated JUnit test for test case 190: ( 0 0 8 0 7 )
 public void testCase190(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00807)"));
 }
 
 //Generated JUnit test for test case 191: ( 0 0 8 7 )
 public void testCase191(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0087)"));
 }
 
 //Generated JUnit test for test case 192: ( 0 0 9 (
 public void testCase192(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(009("));
 }
 
 //Generated JUnit test for test case 193: ( 0 0 9 )
 public void testCase193(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(009)"));
 }
 
 //Generated JUnit test for test case 194: ( 0 0 9 0 0 7 )
 public void testCase194(){
-	assertTrue(bondRegex("nononononononoyes"));
+	assertTrue(bondRegex("(009007)"));
 }
 
 //Generated JUnit test for test case 195: ( 0 0 9 0 7 )
 public void testCase195(){
-	assertFalse(bondRegex("nonononononono"));
+	assertFalse(bondRegex("(00907)"));
 }
 
 //Generated JUnit test for test case 196: ( 0 0 9 7 )
 public void testCase196(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0097)"));
 }
 
 //Generated JUnit test for test case 197: ( 0 1 (
 public void testCase197(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(01("));
 }
 
 //Generated JUnit test for test case 198: ( 0 1 )
 public void testCase198(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(01)"));
 }
 
 //Generated JUnit test for test case 199: ( 0 1 0 0 7 )
 public void testCase199(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(01007)"));
 }
 
 //Generated JUnit test for test case 200: ( 0 1 0 7 )
 public void testCase200(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0107)"));
 }
 
 //Generated JUnit test for test case 201: ( 0 1 7 )
 public void testCase201(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(017)"));
 }
 
 //Generated JUnit test for test case 202: ( 0 2 (
 public void testCase202(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(02("));
 }
 
 //Generated JUnit test for test case 203: ( 0 2 )
 public void testCase203(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(02)"));
 }
 
 //Generated JUnit test for test case 204: ( 0 2 0 0 7 )
 public void testCase204(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(02007)"));
 }
 
 //Generated JUnit test for test case 205: ( 0 2 0 7 )
 public void testCase205(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0207)"));
 }
 
 //Generated JUnit test for test case 206: ( 0 2 7 )
 public void testCase206(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(027)"));
 }
 
 //Generated JUnit test for test case 207: ( 0 3 (
 public void testCase207(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(03("));
 }
 
 //Generated JUnit test for test case 208: ( 0 3 )
 public void testCase208(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(03)"));
 }
 
 //Generated JUnit test for test case 209: ( 0 3 0 0 7 )
 public void testCase209(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(03007)"));
 }
 
 //Generated JUnit test for test case 210: ( 0 3 0 7 )
 public void testCase210(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0307)"));
 }
 
 //Generated JUnit test for test case 211: ( 0 3 7 )
 public void testCase211(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(037)"));
 }
 
 //Generated JUnit test for test case 212: ( 0 4 (
 public void testCase212(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(04("));
 }
 
 //Generated JUnit test for test case 213: ( 0 4 )
 public void testCase213(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(04)"));
 }
 
 //Generated JUnit test for test case 214: ( 0 4 0 0 7 )
 public void testCase214(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(04007)"));
 }
 
 //Generated JUnit test for test case 215: ( 0 4 0 7 )
 public void testCase215(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0407)"));
 }
 
 //Generated JUnit test for test case 216: ( 0 4 7 )
 public void testCase216(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(047)"));
 }
 
 //Generated JUnit test for test case 217: ( 0 5 (
 public void testCase217(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(05("));
 }
 
 //Generated JUnit test for test case 218: ( 0 5 )
 public void testCase218(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(05)"));
 }
 
 //Generated JUnit test for test case 219: ( 0 5 0 0 7 )
 public void testCase219(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(05007)"));
 }
 
 //Generated JUnit test for test case 220: ( 0 5 0 7 )
 public void testCase220(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0507)"));
 }
 
 //Generated JUnit test for test case 221: ( 0 5 7 )
 public void testCase221(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(057)"));
 }
 
 //Generated JUnit test for test case 222: ( 0 6 (
 public void testCase222(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(06("));
 }
 
 //Generated JUnit test for test case 223: ( 0 6 )
 public void testCase223(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(06)"));
 }
 
 //Generated JUnit test for test case 224: ( 0 6 0 0 7 )
 public void testCase224(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(06007)"));
 }
 
 //Generated JUnit test for test case 225: ( 0 6 0 7 )
 public void testCase225(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0607)"));
 }
 
 //Generated JUnit test for test case 226: ( 0 6 7 )
 public void testCase226(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(067)"));
 }
 
 //Generated JUnit test for test case 227: ( 0 7 (
 public void testCase227(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(07("));
 }
 
 //Generated JUnit test for test case 228: ( 0 7 )
 public void testCase228(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(07)"));
 }
 
 //Generated JUnit test for test case 229: ( 0 7 0 0 7 )
 public void testCase229(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(07007)"));
 }
 
 //Generated JUnit test for test case 230: ( 0 7 0 7 )
 public void testCase230(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0707)"));
 }
 
 //Generated JUnit test for test case 231: ( 0 7 7 )
 public void testCase231(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(077)"));
 }
 
 //Generated JUnit test for test case 232: ( 0 8 (
 public void testCase232(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(08("));
 }
 
 //Generated JUnit test for test case 233: ( 0 8 )
 public void testCase233(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(08)"));
 }
 
 //Generated JUnit test for test case 234: ( 0 8 0 0 7 )
 public void testCase234(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(08007)"));
 }
 
 //Generated JUnit test for test case 235: ( 0 8 0 7 )
 public void testCase235(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0807)"));
 }
 
 //Generated JUnit test for test case 236: ( 0 8 7 )
 public void testCase236(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(087)"));
 }
 
 //Generated JUnit test for test case 237: ( 0 9 (
 public void testCase237(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(09("));
 }
 
 //Generated JUnit test for test case 238: ( 0 9 )
 public void testCase238(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(09)"));
 }
 
 //Generated JUnit test for test case 239: ( 0 9 0 0 7 )
 public void testCase239(){
-	assertTrue(bondRegex("nonononononoyes"));
+	assertTrue(bondRegex("(09007)"));
 }
 
 //Generated JUnit test for test case 240: ( 0 9 0 7 )
 public void testCase240(){
-	assertFalse(bondRegex("nononononono"));
+	assertFalse(bondRegex("(0907)"));
 }
 
 //Generated JUnit test for test case 241: ( 0 9 7 )
 public void testCase241(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(097)"));
 }
 
 //Generated JUnit test for test case 242: ( 1 (
 public void testCase242(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(1("));
 }
 
 //Generated JUnit test for test case 243: ( 1 )
 public void testCase243(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(1)"));
 }
 
 //Generated JUnit test for test case 244: ( 1 0 0 7 )
 public void testCase244(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(1007)"));
 }
 
 //Generated JUnit test for test case 245: ( 1 0 7 )
 public void testCase245(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(107)"));
 }
 
 //Generated JUnit test for test case 246: ( 1 7 )
 public void testCase246(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(17)"));
 }
 
 //Generated JUnit test for test case 247: ( 2 (
 public void testCase247(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(2("));
 }
 
 //Generated JUnit test for test case 248: ( 2 )
 public void testCase248(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(2)"));
 }
 
 //Generated JUnit test for test case 249: ( 2 0 0 7 )
 public void testCase249(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(2007)"));
 }
 
 //Generated JUnit test for test case 250: ( 2 0 7 )
 public void testCase250(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(207)"));
 }
 
 //Generated JUnit test for test case 251: ( 2 7 )
 public void testCase251(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(27)"));
 }
 
 //Generated JUnit test for test case 252: ( 3 (
 public void testCase252(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(3("));
 }
 
 //Generated JUnit test for test case 253: ( 3 )
 public void testCase253(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(3)"));
 }
 
 //Generated JUnit test for test case 254: ( 3 0 0 7 )
 public void testCase254(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(3007)"));
 }
 
 //Generated JUnit test for test case 255: ( 3 0 7 )
 public void testCase255(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(307)"));
 }
 
 //Generated JUnit test for test case 256: ( 3 7 )
 public void testCase256(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(37)"));
 }
 
 //Generated JUnit test for test case 257: ( 4 (
 public void testCase257(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(4("));
 }
 
 //Generated JUnit test for test case 258: ( 4 )
 public void testCase258(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(4)"));
 }
 
 //Generated JUnit test for test case 259: ( 4 0 0 7 )
 public void testCase259(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(4007)"));
 }
 
 //Generated JUnit test for test case 260: ( 4 0 7 )
 public void testCase260(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(407)"));
 }
 
 //Generated JUnit test for test case 261: ( 4 7 )
 public void testCase261(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(47)"));
 }
 
 //Generated JUnit test for test case 262: ( 5 (
 public void testCase262(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(5("));
 }
 
 //Generated JUnit test for test case 263: ( 5 )
 public void testCase263(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(5)"));
 }
 
 //Generated JUnit test for test case 264: ( 5 0 0 7 )
 public void testCase264(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(5007)"));
 }
 
 //Generated JUnit test for test case 265: ( 5 0 7 )
 public void testCase265(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(507)"));
 }
 
 //Generated JUnit test for test case 266: ( 5 7 )
 public void testCase266(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(57)"));
 }
 
 //Generated JUnit test for test case 267: ( 6 (
 public void testCase267(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(6("));
 }
 
 //Generated JUnit test for test case 268: ( 6 )
 public void testCase268(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(6)"));
 }
 
 //Generated JUnit test for test case 269: ( 6 0 0 7 )
 public void testCase269(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(6007)"));
 }
 
 //Generated JUnit test for test case 270: ( 6 0 7 )
 public void testCase270(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(607)"));
 }
 
 //Generated JUnit test for test case 271: ( 6 7 )
 public void testCase271(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(67)"));
 }
 
 //Generated JUnit test for test case 272: ( 7 (
 public void testCase272(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(7("));
 }
 
 //Generated JUnit test for test case 273: ( 7 )
 public void testCase273(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(7)"));
 }
 
 //Generated JUnit test for test case 274: ( 7 0 0 7 )
 public void testCase274(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(7007)"));
 }
 
 //Generated JUnit test for test case 275: ( 7 0 7 )
 public void testCase275(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(707)"));
 }
 
 //Generated JUnit test for test case 276: ( 7 7 )
 public void testCase276(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(77)"));
 }
 
 //Generated JUnit test for test case 277: ( 8 (
 public void testCase277(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(8("));
 }
 
 //Generated JUnit test for test case 278: ( 8 )
 public void testCase278(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(8)"));
 }
 
 //Generated JUnit test for test case 279: ( 8 0 0 7 )
 public void testCase279(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(8007)"));
 }
 
 //Generated JUnit test for test case 280: ( 8 0 7 )
 public void testCase280(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(807)"));
 }
 
 //Generated JUnit test for test case 281: ( 8 7 )
 public void testCase281(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(87)"));
 }
 
 //Generated JUnit test for test case 282: ( 9 (
 public void testCase282(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(9("));
 }
 
 //Generated JUnit test for test case 283: ( 9 )
 public void testCase283(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("(9)"));
 }
 
 //Generated JUnit test for test case 284: ( 9 0 0 7 )
 public void testCase284(){
-	assertTrue(bondRegex("nononononoyes"));
+	assertTrue(bondRegex("(9007)"));
 }
 
 //Generated JUnit test for test case 285: ( 9 0 7 )
 public void testCase285(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("(907)"));
 }
 
 //Generated JUnit test for test case 286: ( 9 7 )
 public void testCase286(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("(97)"));
 }
 
 //Generated JUnit test for test case 287: )
 public void testCase287(){
-	assertFalse(bondRegex("no"));
+	assertFalse(bondRegex(")"));
 }
 
 //Generated JUnit test for test case 288: ) (
 public void testCase288(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex(")("));
 }
 
 //Generated JUnit test for test case 289: ) )
 public void testCase289(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("))"));
 }
 
 //Generated JUnit test for test case 290: ) 0 0 7 )
 public void testCase290(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex(")007)"));
 }
 
 //Generated JUnit test for test case 291: ) 0 7 )
 public void testCase291(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex(")07)"));
 }
 
 //Generated JUnit test for test case 292: ) 7 )
 public void testCase292(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex(")7)"));
 }
 
 //Generated JUnit test for test case 293: 0 (
 public void testCase293(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("0("));
 }
 
 //Generated JUnit test for test case 294: 0 )
 public void testCase294(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("0)"));
 }
 
 //Generated JUnit test for test case 295: 0 0 0 7 )
 public void testCase295(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("0007)"));
 }
 
 //Generated JUnit test for test case 296: 0 0 7 )
 public void testCase296(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("007)"));
 }
 
 //Generated JUnit test for test case 297: 0 7 )
 public void testCase297(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("07)"));
 }
 
 //Generated JUnit test for test case 298: 1 (
 public void testCase298(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("1("));
 }
 
 //Generated JUnit test for test case 299: 1 )
 public void testCase299(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("1)"));
 }
 
 //Generated JUnit test for test case 300: 1 0 0 7 )
 public void testCase300(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("1007)"));
 }
 
 //Generated JUnit test for test case 301: 1 0 7 )
 public void testCase301(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("107)"));
 }
 
 //Generated JUnit test for test case 302: 1 7 )
 public void testCase302(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("17)"));
 }
 
 //Generated JUnit test for test case 303: 2 (
 public void testCase303(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("2("));
 }
 
 //Generated JUnit test for test case 304: 2 )
 public void testCase304(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("2)"));
 }
 
 //Generated JUnit test for test case 305: 2 0 0 7 )
 public void testCase305(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("2007)"));
 }
 
 //Generated JUnit test for test case 306: 2 0 7 )
 public void testCase306(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("207)"));
 }
 
 //Generated JUnit test for test case 307: 2 7 )
 public void testCase307(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("27)"));
 }
 
 //Generated JUnit test for test case 308: 3 (
 public void testCase308(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("3("));
 }
 
 //Generated JUnit test for test case 309: 3 )
 public void testCase309(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("3)"));
 }
 
 //Generated JUnit test for test case 310: 3 0 0 7 )
 public void testCase310(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("3007)"));
 }
 
 //Generated JUnit test for test case 311: 3 0 7 )
 public void testCase311(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("307)"));
 }
 
 //Generated JUnit test for test case 312: 3 7 )
 public void testCase312(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("37)"));
 }
 
 //Generated JUnit test for test case 313: 4 (
 public void testCase313(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("4("));
 }
 
 //Generated JUnit test for test case 314: 4 )
 public void testCase314(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("4)"));
 }
 
 //Generated JUnit test for test case 315: 4 0 0 7 )
 public void testCase315(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("4007)"));
 }
 
 //Generated JUnit test for test case 316: 4 0 7 )
 public void testCase316(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("407)"));
 }
 
 //Generated JUnit test for test case 317: 4 7 )
 public void testCase317(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("47)"));
 }
 
 //Generated JUnit test for test case 318: 5 (
 public void testCase318(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("5("));
 }
 
 //Generated JUnit test for test case 319: 5 )
 public void testCase319(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("5)"));
 }
 
 //Generated JUnit test for test case 320: 5 0 0 7 )
 public void testCase320(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("5007)"));
 }
 
 //Generated JUnit test for test case 321: 5 0 7 )
 public void testCase321(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("507)"));
 }
 
 //Generated JUnit test for test case 322: 5 7 )
 public void testCase322(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("57)"));
 }
 
 //Generated JUnit test for test case 323: 6 (
 public void testCase323(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("6("));
 }
 
 //Generated JUnit test for test case 324: 6 )
 public void testCase324(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("6)"));
 }
 
 //Generated JUnit test for test case 325: 6 0 0 7 )
 public void testCase325(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("6007)"));
 }
 
 //Generated JUnit test for test case 326: 6 0 7 )
 public void testCase326(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("607)"));
 }
 
 //Generated JUnit test for test case 327: 6 7 )
 public void testCase327(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("67)"));
 }
 
 //Generated JUnit test for test case 328: 7 (
 public void testCase328(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("7("));
 }
 
 //Generated JUnit test for test case 329: 7 )
 public void testCase329(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("7)"));
 }
 
 //Generated JUnit test for test case 330: 7 0 0 7 )
 public void testCase330(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("7007)"));
 }
 
 //Generated JUnit test for test case 331: 7 0 7 )
 public void testCase331(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("707)"));
 }
 
 //Generated JUnit test for test case 332: 7 7 )
 public void testCase332(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("77)"));
 }
 
 //Generated JUnit test for test case 333: 8 (
 public void testCase333(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("8("));
 }
 
 //Generated JUnit test for test case 334: 8 )
 public void testCase334(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("8)"));
 }
 
 //Generated JUnit test for test case 335: 8 0 0 7 )
 public void testCase335(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("8007)"));
 }
 
 //Generated JUnit test for test case 336: 8 0 7 )
 public void testCase336(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("807)"));
 }
 
 //Generated JUnit test for test case 337: 8 7 )
 public void testCase337(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("87)"));
 }
 
 //Generated JUnit test for test case 338: 9 (
 public void testCase338(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("9("));
 }
 
 //Generated JUnit test for test case 339: 9 )
 public void testCase339(){
-	assertFalse(bondRegex("nono"));
+	assertFalse(bondRegex("9)"));
 }
 
 //Generated JUnit test for test case 340: 9 0 0 7 )
 public void testCase340(){
-	assertFalse(bondRegex("nonononono"));
+	assertFalse(bondRegex("9007)"));
 }
 
 //Generated JUnit test for test case 341: 9 0 7 )
 public void testCase341(){
-	assertFalse(bondRegex("nononono"));
+	assertFalse(bondRegex("907)"));
 }
 
 //Generated JUnit test for test case 342: 9 7 )
 public void testCase342(){
-	assertFalse(bondRegex("nonono"));
+	assertFalse(bondRegex("97)"));
 }
