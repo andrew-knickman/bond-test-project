@@ -333,7 +333,7 @@ public class JamesBondTest {
 	public void testCase41() throws Exception{
 		JamesBond fixture = new JamesBond();
 		Boolean result = fixture.bondRegex("(00007)");
-		assertFalse(result);
+		assertTrue(result);
 	}
 
 	//Generated JUnit test for test case 42: ( 0 0 0 7 )
@@ -341,7 +341,7 @@ public class JamesBondTest {
 	public void testCase42() throws Exception{
 		JamesBond fixture = new JamesBond();
 		Boolean result = fixture.bondRegex("(0007)");
-		assertFalse(result);
+		assertTrue(result);
 	}
 
 	//Generated JUnit test for test case 43: ( 0 0 1 (
