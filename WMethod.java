@@ -408,9 +408,9 @@ public class WMethod{
     	System.out.println("public void testCase" + (m+1) + "(){");
     	String outputStr = Utilities.runFSM(FSM, 1, strgTestCase, " ", true);
     	if(outputStr.contains("yes"))
-    		System.out.println("\tassertTrue(bondRegex(" + outputStr + "));");
+    		System.out.println("\tassertTrue(bondRegex(\"" + outputStr + "\"));");
     	else
-    		System.out.println("\tassertFalse(bondRegex(" + outputStr + "));");
+    		System.out.println("\tassertFalse(bondRegex(\"" + outputStr + "\"));");
     	System.out.println("}");
     }
 
