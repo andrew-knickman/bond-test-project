@@ -405,12 +405,14 @@ public class WMethod{
 		 for(int n = 0; n < spltTestCase.length; n++)
 			 strgTestCase = strgTestCase + " " + spltTestCase[n];
     	System.out.println("\n//Generated JUnit test for test case " + (m+1) + ":" + strgTestCase);
-    	System.out.println("public void testCase" + (m+1) + "(){");
+    	System.out.println("@Test\npublic void testCase" + (m+1) + "() throws Exception{");
     	String outputStr = Utilities.runFSM(FSM, 1, strgTestCase, " ", true);
+    	System.out.println("\tJamesBond fixture = new JamesBond()");
+    	System.out.println("\tboolean result = fixture.bondRegex(\"" + tests.elementAt(m) + "\");");
     	if(outputStr.contains("yes"))
-    		System.out.println("\tassertTrue(bondRegex(\"" + tests.elementAt(m) + "\"));");
+    		System.out.println("\tassertTrue(fixture.bondRegex(result));");
     	else
-    		System.out.println("\tassertFalse(bondRegex(\"" + tests.elementAt(m) + "\"));");
+    		System.out.println("\tassertFalse(fixture.bondRegex(result);");
     	System.out.println("}");
     }
 
