@@ -82,7 +82,9 @@ public class Utilities{
     String token;  // An input symbol from the input sequence.
     StringTokenizer inputTokens=new StringTokenizer(input, separator);
     int currentState=stateID;  // Rest the FSM to state StateID.
-    Utilities.debugFSMExecution("\nFSM execution begins. Input: "+input+" Initial state: "+stateID);
+    //Suppress printing for test generation
+    if(genTests == false)
+    	Utilities.debugFSMExecution("\nFSM execution begins. Input: "+input+" Initial state: "+stateID);
     if(FSM[stateID]==null){
       Utilities.printException("wAlgorithm", "runFSM", "Invalid start state. Execution aborted.");
       return null;
@@ -90,12 +92,14 @@ public class Utilities{
     while(inputTokens.hasMoreTokens()){
       token=inputTokens.nextToken(); //Get next token from input.
       try{
+    	//Suppress printing for test generation
     	if(genTests == false)  
     		Utilities.debugFSMExecution("Current state: "+currentState);
         Edge nextStateEdge=FSM[currentState].getNextState(token);
         String outputGenerated=nextStateEdge.output();
         int nextState=nextStateEdge.tail();
         outputPattern=outputPattern+outputGenerated;
+        //Suppress printing for test generation
         if(genTests == false)
         	Utilities.debugFSMExecution(" Input: "+token+" Next state: "+nextState+" Output: "+outputGenerated);
         currentState=nextState;
@@ -103,10 +107,11 @@ public class Utilities{
         Utilities.printException("WMethod", "runFSM", " Invalid token: "+token);
       }
     }
-    if(genTests == false)
+    //Suppress printing for test generation
+    if(genTests == false){
     	Utilities.debugFSMExecution("\nFSM execution completed. Final state: "+currentState);
-    Utilities.debugFSMExecution("Output pattern:"+outputPattern);
-    
+    	Utilities.debugFSMExecution("Output pattern:"+outputPattern);	
+    }
     return outputPattern;
   }
 }// End of class Utilities.
